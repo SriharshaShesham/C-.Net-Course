@@ -31,6 +31,7 @@ namespace _2.ScopesAndConventions
             Console.WriteLine(secondNumberToAdd);
             Console.WriteLine(thirdNumberToAdd);
             Console.WriteLine(fourthNumberToAdd);
+            
 
         }
     }

@@ -54,3 +54,11 @@ namespace _4.ReadingInputFromConsole
         }
     }
 }
+
+
+
+// |--------------------------------------------------
+                UserName
+
+            --------------------
+                Password

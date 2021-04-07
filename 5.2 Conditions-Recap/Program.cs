@@ -22,8 +22,10 @@ namespace _5._2_Conditions_Recap
 
 
         }
-
-        static bool CheckIfStringIsEmpty(string inputString)//
+        
+        
+        // returnType FunctionName(parameterType parameterName)
+        static bool CheckIfStringIsEmpty(string inputString)  
         {
             if(inputString=="")
             {

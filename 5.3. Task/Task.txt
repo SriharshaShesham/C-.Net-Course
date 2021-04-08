@@ -1,0 +1,40 @@
+Sundarakanda:
+
+
+Ashokavanam(Ravanudu)
+{
+    Ravanudu -> 
+    stringResult=SitaToRavana();
+    cw("Does sita go? "+stringResult);
+    
+    Hanumantudu -> ""+santosham
+    stringResult=SitaToHanuma()
+    cw("Does sita go? "+stringResult);
+
+    HanumanLankaTour();
+    Ramudu -> Sitamma veltundi
+    stringResult=SitaRamaHappy();
+    cw("Does sita go? "+stringResult);
+}
+
+Ravana
+{
+    "sitamma velladu"
+    Ravanudu -> asyyinchukuntundi
+    return velladu;
+}
+
+
+Hanuma
+{
+    Hanumantudu -> santosham
+
+    Hanumantudu -> sitamma matladinaka 
+    -> Ravanundiki warning -> 
+    Lanka kalchestadu
+}
+
+Rama
+{
+    Ramudu -> Ravanunni champinaka -> Sitamma Ramunitho veltadi.
+}

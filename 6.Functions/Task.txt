@@ -1,0 +1,33 @@
+user1 balance =1000;
+user2  balance = 100;
+user3 balance  = 500;
+bankMinBal = 100;
+
+User visits bank
+approaches the accountant deposit the amount
+
+accountant()
+{
+    "Deposit/Withdrawl"
+
+    "How much you want to deposit"
+    100
+    UpdateUserAccount()
+}
+
+
+UpdateUserAccount(Deposit/Withdrawl,amount)
+{
+    user1 balance + deposit amount;
+    
+}
+
+Deposit(user,amount)
+{
+
+}
+
+Withdrawl(user, amount)
+{
+
+}

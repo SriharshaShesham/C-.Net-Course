@@ -1,0 +1,24 @@
+//Jananam
+    punyam
+    papam
+
+//Maranam
+
+//Swargam
+//Narakam
+
+account=nill
+//Sayudyam
+
+
+punyam=10;
+pampam=3;
+
+DeathDate=10
+
+until(DeathDate==0)
+{
+    Write("1. Punyam", "2.Papam")
+
+
+}

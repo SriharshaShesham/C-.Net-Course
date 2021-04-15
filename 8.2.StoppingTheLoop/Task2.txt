@@ -1,0 +1,20 @@
+
+Addition and Multiplication of numbers
+---------------------------------------
+
+>        1. Add two numbers
+        2. Multiply two numbers
+
+        1.
+        Enter 1st number=GetUserInput();
+        2
+        ENter 2nd number=GetUserInput();
+        2
+
+        result=4;
+        Sum of the given two numbers is 4;
+
+Do you wish to continue? (y/n)
+y
+
+n -> exit

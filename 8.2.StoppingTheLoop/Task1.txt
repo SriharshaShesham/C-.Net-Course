@@ -1,0 +1,15 @@
+Finding a number.
+-------------------
+
+
+ask user to enter a number from 1 to 1000
+say user entered 500
+
+Print
+1
+2
+3
+.
+.
+.
+500 -> Match Found. Stopping the loop

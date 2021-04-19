@@ -4,6 +4,7 @@ namespace _8._2.StoppingTheLoop
 {
     class Program
     {
+        const int GenericUriParserOptions=3456;
         static void Main(string[] args)
         {
             byte userSelection;

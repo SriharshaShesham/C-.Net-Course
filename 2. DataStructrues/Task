@@ -1,0 +1,17 @@
+main
+{
+    "sum of numbers in array"
+
+    array[10];
+
+    arraySUm=0;
+
+    array=fillTheArray(array)
+
+    arraySUm=AddItemsInArray(array);
+}
+
+fillTheArray(inpArray)
+{
+    return inpArray;
+}

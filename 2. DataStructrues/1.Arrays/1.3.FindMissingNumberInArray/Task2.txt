@@ -1,0 +1,21 @@
+Find missing number in array
+----------------------------
+
+maxNumber=10;
+
+int[] array;
+
+arraySize=GetArraySizeFromUser();
+
+arraySize=5;
+
+array= new int[arraySize];
+
+
+array =GetArrayValuesFromUser(arraySize,maxNumber);
+
+
+missingNumber=FindMissingNumber(array);
+
+
+cw(The missing number is 5);

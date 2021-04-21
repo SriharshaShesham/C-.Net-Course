@@ -19,10 +19,19 @@ namespace _6._2.FunctionsDetailed
 
         static int setNumberValuePlus10(int inputNumber) //inputNumber=10
         {
-            inputNumber=setNumberValue(10);
+            setNumberValue(10);
             inputNumber+=10;
 
             return inputNumber;
         }
+
+
+        static int printLines()
+        {
+            System.Console.WriteLine("------------------------------------------");
+            System.Console.WriteLine("------------------------------------------");
+            return 1;
+        }
+
     }
 }

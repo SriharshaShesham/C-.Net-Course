@@ -1,0 +1,25 @@
+Find duplicates in array
+----------------------------
+
+maxNumber=getMaxNumberFromUser();
+
+int[] array;
+
+arraySize=GetArraySizeFromUser();
+
+arraySize=5;
+
+array= new int[arraySize];
+
+
+array =GetArrayValuesFromUser(arraySize,maxNumber);
+//input Array= 1 1 1 5 5 9 9 7 1
+
+duplicateNumbers[]=FindduplicateNumbers(array);
+
+Total number of duplicate numbers = 3; //duplicateNumbers.Length
+
+duplicate numbers are 
+1
+5
+9

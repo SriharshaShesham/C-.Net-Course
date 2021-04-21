@@ -1,0 +1,25 @@
+Find missing number in array
+----------------------------
+
+maxNumber=getMaxNumberFromUser();
+
+int[] array;
+
+arraySize=GetArraySizeFromUser();
+
+arraySize=5;
+
+array= new int[arraySize];
+
+
+array =GetArrayValuesFromUser(arraySize,maxNumber);
+//input Array= 1 2 3 5 7 9
+
+missingNumbers[]=FindMissingNumbers(array);
+
+Total number of missing numbers = 3; //missingNumbers.Length
+
+Missing numbers are 
+4
+6
+8

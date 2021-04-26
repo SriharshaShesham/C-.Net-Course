@@ -1,0 +1,42 @@
+User database
+
+Employee table
+--------------
+//Username, Password,Role
+arr[,] = arr[2,3]
+{
+    {User1,xxxxxxx,User},
+    {User2,xxxxxxx,Manager}
+}
+
+Login Form
+UserName:
+Password:
+
+
+5 users
+
+User Login
+-------------
+1. Enter user details:
+
+UserID, First Name, Last Name, Gender, Email
+
+
+Manager Login
+-------------------
+1. Display User details
+                        UserID  First Name Last Name Gender Email
+                        ------  ---------- --------- ------ ------
+                        1       Gopi        Kumar    Male   temp@temp.com
+                        1       Gopi        Kumar    Male   temp@temp.com
+                        1       Gopi        Kumar    Male   temp@temp.com
+                        1       Gopi        Kumar    Male   temp@temp.com
+                        1       Gopi        Kumar    Male   temp@temp.com
+                        1       Gopi        Kumar    Male   temp@temp.com
+
+2. Check if user exists(First Name / Last name / Full Name)
+                        //sample:
+                        UserID  First Name Last Name Gender Email
+                        ------  ---------- --------- ------ ------
+                        1       Gopi        Kumar    Male   temp@temp.com

@@ -2,7 +2,13 @@ array=["Rama","Sitha","Hanuma","Dasharatha"];
 
 
 //string str="Test";
-//str.IndexOf(0);
+//str.IndexOf('T');
+str.Substring(0,1);
+
+string str="Test";
+            System.Console.WriteLine(str.Substring(0,1));
+            
+//T
 
 ascArray=["Dasharatha","Hanuma","Rama","Sitha"];
 

@@ -14,6 +14,7 @@ namespace _1.WelcomeProgram
             Console.WriteLine("Hello from main head!");
             ECE();
             CSE();
+            
         }
 
         //Function / Method

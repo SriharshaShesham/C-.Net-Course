@@ -1,0 +1,11 @@
+array=["Rama","Sitha","Hanuma","Dasharatha"];
+
+
+//string str="Test";
+//str.IndexOf(0);
+
+ascArray=["Dasharatha","Hanuma","Rama","Sitha"];
+
+userInput="Lakshmana";
+
+output=["Dasharatha","Hanuma","Lakshmana","Rama","Sitha"];

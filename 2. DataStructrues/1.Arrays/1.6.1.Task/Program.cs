@@ -1,196 +1,100 @@
 ﻿using System;
 
-namespace MultidimentionalArray
+namespace _1._6.Task
 {
     class Program
     {
-
-        static string[,] employeTable = new string[2, 3] 
-        {
-            { "User1", "1234", "User" },
-            { "User2", "4321", "Manager" }
-        };
-        static int rows=employeTable.GetLength(0);
-        static int cols=employeTable.GetLength(1);
-
-        static int userIndex=-1;
-        static string name = "", password = "";
-        static string[,] userDetails = new string[2, 5] { { "Nil", "Nil", "Nil", "Nil", "Nil" }, { "Nil", "Nil", "Nil", "Nil", "Nil" } };
-        //static int loggedInUserIndex=-1;
-        //static string loggedInUserRole="";
-        static int row = 0, col = 0;
+        static string[] inputArray = new string[15];
         static void Main(string[] args)
         {
-
-            DisplayProgramTitle();
-            LoginForm();
-
+            int arraySize1 = 0;
+            arraySize1=1;
+            arraySize1 = GetArraySizeFromUser();
+            //string[] inputArray = new string[15];
+            //string[] outputArray=new string[arraySize];
+            inputArray = GetArrayElementsFromUser( arraySize1);
+            AddUsersInArray( arraySize1);
         }
-
-        static void DisplayProgramTitle()
+        static int GetArraySizeFromUser()
         {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("       User Login Verification program with Multidimentional Arrays");
-            Console.WriteLine("---------------------------------------------------------------------------");
-            Console.WriteLine();
-            Console.WriteLine();
-
+            int arraySize1 = 0;
+            Console.WriteLine("Enter No.of Users");
+            arraySize1 = Convert.ToInt16(Console.ReadLine());
+            return arraySize1;
         }
-
-
-        static void LoginForm()
+        static string[] GetArrayElementsFromUser( int arraySize1)
         {
-
-            Console.WriteLine("Login Form");
-            Console.WriteLine();
-            Console.Write("1.UserName : ");
-            name = Console.ReadLine();
-            Console.Write("2.Password : ");
-            password = Console.ReadLine();
-            Console.WriteLine();
-
-            userIndex=ReturnUserIndexIfFound(name,password);
-            userRole=GetUserRoleByIndex(userIndex);
-            
-            
-
-
-        }
-
-        static int ReturnUserIndexIfFound(string username,string psw)
-        {
-            for (int counter = 0; counter < rows; counter++)
+            Console.WriteLine("Enter Names of Users");
+            for (int counter = 0; counter < arraySize1; counter++)
             {
-                if ((name == employeTable[counter,0]) && (password == employeTable[counter,1]))
-                {
-
-                    return counter;
-                }
-
-                
+                inputArray[counter] = Console.ReadLine();
             }
-            return -1;
+            return inputArray;
         }
-        
-
-        static string GetUserRoleByIndex(int userIndex)
+        static void AddUsersInArray( int arraySize1)
         {
-            return employeTable[userIndex,2];
-        }
-
-        static void UserLogin()
-        {
-
-            string userInput = " ";
-            Console.WriteLine("        User Login");
-            Console.WriteLine("----------------------------");
-            Console.WriteLine();
-
-            Console.WriteLine("Enter User Details");
-
-            for (int row = 0; row < 2; row++)
+            string dup = "";
+            string dup1 = "";
+            char dummy = ' ';
+            char dummy1 = ' ';
+            int duplicate = 0;
+            int duplicate1 = 0;
+            string temp = "";
+            int addNumOfUsers = 0;
+            Console.WriteLine("Enter No.Of Users You Want to Add");
+            addNumOfUsers = Convert.ToInt16(Console.ReadLine());
+            //string[] outputArray = new string[15];
+            /*for (int counter = 0; counter < arraySize1; counter++)
             {
+                outputAr[counter] = inputArray[counter];
+            }*/
 
-                for (int col = 0; col < 5; col++)
-                {
-                    userInput = Console.ReadLine();
-                    userDetails[row, col] = userInput;
-                }
-                Console.WriteLine();
+            string name="Rama";
+            dup=name+" Sitha";
+            Console.WriteLine(name);
+
+            // array["Rama","Sitha","Hanuma"]
+            // R,S,H
+            // temp=array[rowCounter];
+            // array[rowCounter]
+
+            Console.WriteLine("Enter name of User you want to Add");
+            for (int counter = arraySize1; counter < arraySize1+addNumOfUsers ; counter++)
+            {
+                inputArray[counter] = Console.ReadLine();
             }
-
-            Console.WriteLine("Now its managers turn");
-
-            ManagerLogin();
-
-        }
-
-        static void ManagerLogin()
-        {
-            int option = 0;
-            char continueOption = ' ';
-            Console.WriteLine("      Hello Manager");
-            Console.WriteLine("---------------------------");
-            Console.WriteLine();
-            do
+            for (int rowsCounter = 0; rowsCounter <  arraySize1 + addNumOfUsers; rowsCounter++)
             {
-                Console.WriteLine("Please select an option");
-                Console.WriteLine("1. Diplay User Details  2. Check User");
-                Console.WriteLine();
-                Console.Write("Option : ");
-                option = int.Parse(Console.ReadLine());
-                Console.WriteLine();
-
-
-                switch (option)
+                for (int colCounter = rowsCounter; colCounter <  arraySize1 + addNumOfUsers; colCounter++)
                 {
-                    case 1:
-                        {
-                            UserDetailsDisplay();
-                        }
-                        break;
+                    dup = inputArray[rowsCounter];
+                    dup1 = inputArray[colCounter];
+                    dummy = Char.Parse(dup.Substring(0, 1));
+                    dummy1 =Char.Parse( dup1.Substring(0, 1));
+                    //dummy=inputArray[counter][0];
+                    //dummy1=inputArray[colCounter][0];
+                    Console.WriteLine(dummy);
+                    //Console.WriteLine(dummy1);
+                    duplicate = (int)dummy;
+                    duplicate1 =(int)dummy1;
+                    //Console.WriteLine(duplicate);
+                    //Console.WriteLine(duplicate1);
 
-                    case 2:
-                        {
-                            SearchUser();
-                        }
-                        break;
-
-                    default:
-                        {
-                            Console.WriteLine("Enter Valid Option");
-                        }
-                        break;
-                }
-                Console.WriteLine();
-                Console.WriteLine("Mr.Manager do you want to continue your search");
-                continueOption = char.Parse(Console.ReadLine());
-            } while (continueOption == 'y');
-            Console.WriteLine();
-        }
-
-        static void UserDetailsDisplay()
-        {
-            Console.WriteLine("S.No FirstName LastName  Gender E-Mail Id");
-            Console.WriteLine("---- --------- --------  ------ ---------");
-            for (row = 0; row < 2; row++)
-            {
-                for (col = 0; col < 5; col++)
-                {
-                    Console.Write($"{userDetails[row, col]} \t");
-                }
-                Console.WriteLine();
-            }
-        }
-
-        static void SearchUser()
-        {
-            string search;
-            int rowDetails = 0;
-            Console.WriteLine("Please enter the keyword you want to search");
-            search = Console.ReadLine();
-            Console.WriteLine();
-            for (row = 0; row < 2; row++)
-            {
-                for (col = 0; col < 5; col++)
-                {
-                    if ((userDetails[row, 1]) == search || (userDetails[row, 2]) == search || (userDetails[row, 3]) == search || (userDetails[row, 4]) == search)
+                    if (duplicate > duplicate1)
                     {
-                        rowDetails = row;
+                        temp = dup;
+                        inputArray[rowsCounter] = dup1;
+                        inputArray[colCounter] = temp;
                     }
                 }
             }
-            Console.WriteLine("S.No FirstName   LastName    Gender  E-Mail Id");
-            Console.WriteLine("---- ---------   --------    ------  ---------");
-
-            row = rowDetails;
-            for (col = 0; col < 5; col++)
+            for (int counter = 0; counter < arraySize1+addNumOfUsers; counter++)
             {
-                Console.Write($"{userDetails[row, col]}\t");
-
+                Console.WriteLine(inputArray[counter]);
             }
-            Console.WriteLine();
+
+            Console.ReadLine();
+
         }
     }
 }

@@ -1,0 +1,36 @@
+Program Class (IOT Application)
+--------------
+
+
+
+
+
+ElectronicDevicesShop Class
+-----------------------------
+
+resistors =100;
+transistors =200;
+diodes=50;
+breadboards=100;
+bldcMotors=300;
+escModules=100;
+
+
+if user choseses to buy breadboard -> Give a set of resistor,transistor,diode to the user as bonus.
+
+
+GetListOfDevicesAvailable()
+{
+
+}
+
+GetUserChoices()
+{
+
+}
+
+GenerateBill()
+{
+
+}
+

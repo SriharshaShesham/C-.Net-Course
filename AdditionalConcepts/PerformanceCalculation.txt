@@ -1,0 +1,5 @@
+// System Storage space  ----> Ignore
+
+// Performance calculation  --> Number of Loops -> Big O Notation -> if 2 nested for loops O(n^2). If one loop O(n). If multiple loops(not nested) O(n); Basic calculation no loops -> O(1);
+
+// Space calculation --> CPU Cache utilization -> If you add a declartion inside loop it consumes more memory

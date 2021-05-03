@@ -1,0 +1,15 @@
+Employee{
+    ID
+    FirstName
+    LastName
+    Role
+    Salary
+}
+
+
+ProgramClass
+{
+    get EMployee data 
+
+    Get Employees whose Salary is > 20000
+}

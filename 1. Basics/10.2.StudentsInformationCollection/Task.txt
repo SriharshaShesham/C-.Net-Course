@@ -1,0 +1,34 @@
+
+ProgramClass{
+
+}
+
+Students
+{
+    Student[] students;
+
+    CollectStudentData()
+    {
+        How many students =4
+
+    }
+
+    PrintStudentsData()
+    {
+
+    }
+
+    PrintStudentsWhosePercentageGTEighty()
+    {
+        
+    }
+}
+
+Student
+{
+    FirstName
+    LastName
+    ID
+    Gender
+    SSCTotal
+}

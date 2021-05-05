@@ -7,11 +7,19 @@ namespace ClassessAndProperties
         static void Main(string[] args)
         {
 
-
+            //This array has 3 items
             int[] arrayName = new int[3];
+            
+            //This Student array has 3 items
             Student[] students = new Student[3];
             
+
+            // Student student=new Student();
+            students[0]=new Student();
+            
             arrayName[0]=1;
+
+        
 
             students[0]=new Student();
             students[0].StudentID=1234;

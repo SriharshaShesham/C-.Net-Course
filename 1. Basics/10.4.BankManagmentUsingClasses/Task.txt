@@ -1,0 +1,36 @@
+
+Program
+{
+    setInitialBalance = 2000;
+    Deposit()
+    WithDraw()
+    PrintStatement();
+}
+
+
+
+Bank
+{
+    UserBalance =0
+    minimumBalance=1000;
+
+    Deposit(100)
+
+    WithDraw()
+
+    PrintStatement()
+    {
+        Transaction Type                Transaction Amount
+        -----------------               --------------------
+        Deposit                             10000
+        Deposit                             10000
+        WithDraw                            1000
+        Deposit                             200
+        WithDraw                            1050
+        WithDraw                            10
+        Deposit                             1000
+
+        ----------------------------------------------------
+        Current Balance                     9000
+    }
+}

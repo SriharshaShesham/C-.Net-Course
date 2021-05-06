@@ -1,0 +1,22 @@
+
+Program
+{
+    
+    collection = 5;
+    collection.Add(10); -1
+    collection.Add(12);
+    collection.Add(13);
+    collection.Add(14); -1
+    collection.Add(15);
+    collection.Add(16); -1
+    collection.Remove(10);
+    collection.Remove(14);
+    collection.Remove(16);
+    collection.Print();
+
+}
+
+Collection
+{
+
+}

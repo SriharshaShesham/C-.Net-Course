@@ -1,0 +1,34 @@
+Program
+{
+    Member member;
+    
+    User Input
+    {
+        member.ID=1;
+        member.Name="";
+        member.role="Student";
+    }
+
+    schoole.AddMember(member);
+}
+
+School
+{
+    
+    void AddMember(Member member); //Alphabetical
+
+    memberObj FindAMember("UserName")
+
+    RemoveMember(ID);
+
+
+}
+
+Member
+{
+    int ID;
+    string Name;
+    role {Student or teacher}
+
+}
+

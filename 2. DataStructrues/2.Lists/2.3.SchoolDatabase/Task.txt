@@ -20,8 +20,6 @@ School
     memberObj FindAMember("UserName")
 
     RemoveMember(ID);
-
-
 }
 
 Member

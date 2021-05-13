@@ -1,0 +1,13 @@
+Program
+{
+
+}
+
+Collection
+{
+    Add(int number);
+    Remove(); -> Remove last item added.input{1,2,3,4,5} -> output {1,2,3,4}
+    Contains(int number) -> return bool.
+    Clear(); -> Remove everything
+    print(); -> Latest to old entry print. input{1,2,3,4,5} -> output {5,4,3,2,1}
+}

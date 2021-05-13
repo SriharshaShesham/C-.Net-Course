@@ -1,6 +1,12 @@
 Program
 {
-
+    do
+    {
+        1.Add
+        .
+        .
+        5.Print
+    }
 }
 
 Collection

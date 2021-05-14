@@ -1,0 +1,27 @@
+
+Program{
+
+}
+
+SocialNetwork
+{
+    RegisterUser(User);// 5 users
+    
+    Create a post();
+    Delete a post();
+    Find a User();
+    
+}
+
+User
+{
+    id;
+    name;
+    email;
+}
+
+Post{
+    postid;
+    postContent;
+    createdByUserID;
+}

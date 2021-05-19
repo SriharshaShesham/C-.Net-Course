@@ -1,16 +1,56 @@
 
 Program{
 
+    Sn
+    loop{
+        1. sn.RegisterUser(User userObj);// 5 users    
+        2. LoginUser()
+        3. sn.FindUser
+    }
+
+
+}
+LoginUser(sn)
+{
+    username=Enter User name;
+    psw= enter psw
+    if(sn.ValidateUser(userName,psw))
+    {
+        loop{
+            1. Create a post(); sn.CreatePost(Post postObj);
+            {
+                Enter Post id;
+                Title
+                msg
+            }
+            2. Delete a post(); sn.DeletePost(int postID);
+            {
+                id
+            }
+            3. Find a Post(int postId);
+            {
+                id
+            }
+            4. Logout();
+        }
+    }
 }
 
 SocialNetwork
 {
-    RegisterUser(User);// 5 users
+    RegisterUser(User userObj);// 5 users    
+    LoginUser(User userObj)
+    LoginUser
+    {
+
+        1. Create a post();
+        2. Delete a post();
+        3. Find a Post();
+        4. Logout();
+    }
     
-    Create a post();
-    Delete a post();
-    Find a User();
-    
+    FindAUser();
+
 }
 
 User

@@ -1,0 +1,11 @@
+1.Select a story from Itihasa (Ramayanam,Mahabharatam)
+
+Task
+{
+    Heading
+    Image
+    Paragraph -> Story (Type it. Don't copy paste)
+    
+    References->Heading
+        Links -> References
+}

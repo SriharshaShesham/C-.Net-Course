@@ -1,0 +1,18 @@
+#PageTitle {
+  text-align: center;
+  background: yellow;
+  padding: 20px;
+}
+.HeaderText {
+  text-align: center;
+  background: yellow;
+  padding: 20px;
+  margin: 0px;
+}
+.SubHeading {
+  text-align: right;
+}
+.kandamu {
+  text-align: center;
+  text-decoration: underline double red;
+}

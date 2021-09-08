@@ -1,0 +1,40 @@
+Number Calculation
+
+{
+    1.Addition
+    2.Substration. Substract 2nd Number from first 
+    3.Multiplication. Multiply 1st number by second
+    4.Division. Divide 1st number by second
+
+    2
+    Check if 2nd number is not greater than first
+    {
+        -> if invalid show message "Entered 2nd number is invalid"
+        -> ask user to enter the number again
+    } 3 retries. If greater than 3 "Max invalid responses reached".
+
+    3,4
+    Check if any number is zero
+    {
+        -> if invalid show message "Entered 1st/2nd number is zero."
+        -> ask user to enter the number again
+    } 3 retries. If greater than 3 "Max invalid responses reached".
+
+
+}Do you want to continue(y/n)
+
+
+
+Calculation should be in a different class
+Program.cs
+{
+    BasicCalculations()
+    {
+        {
+            1.Addition
+            2.Substration. Substract 2nd Number from first 
+            3.Multiplication. Multiply 1st number by second
+            4.Division. Divide 1st number by second
+        }
+    }
+}
